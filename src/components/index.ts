@@ -1,3 +1,4 @@
 import SmoothScroll from "./smoothscroll/SmoothScroll";
+import RoundedBtn from "./RoundedBtn";
 
-export { SmoothScroll };
+export { SmoothScroll, RoundedBtn };
