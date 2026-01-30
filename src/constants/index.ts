@@ -130,3 +130,34 @@ export const navMenuLinks = [
     subMenu: false,
   },
 ];
+
+export const footerLinks = {
+  Products: [
+    { label: "Payments", href: "#" },
+    { label: "Billing", href: "#" },
+    { label: "Connect", href: "#" },
+    { label: "Invoicing", href: "#" },
+    { label: "Terminal", href: "#" },
+  ],
+  Developers: [
+    { label: "Documentation", href: "#" },
+    { label: "API Reference", href: "#" },
+    { label: "Libraries", href: "#" },
+    { label: "Plugins", href: "#" },
+    { label: "Code Samples", href: "#" },
+  ],
+  Company: [
+    { label: "About", href: "#" },
+    { label: "Customers", href: "#" },
+    { label: "Partners", href: "#" },
+    { label: "Jobs", href: "#" },
+    { label: "Newsroom", href: "#" },
+  ],
+  Resources: [
+    { label: "Support", href: "#" },
+    { label: "Contact Sales", href: "#" },
+    { label: "Privacy", href: "#" },
+    { label: "Terms", href: "#" },
+    { label: "Sitemap", href: "#" },
+  ],
+};

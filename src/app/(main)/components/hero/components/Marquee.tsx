@@ -15,7 +15,7 @@ const MarqueeComponent = () => {
   ];
   return (
     <Box className="border-t! border-gray-400! h-18! flex! items-center! overflow-hidden! justify-center!">
-      <Marquee autoFill={true} speed={50} pauseOnHover={true} gradient={false}>
+      <Marquee autoFill={true} speed={80} pauseOnHover={true} gradient={false}>
         {logos.map((logo, idx) => (
           <Image
             src={logo}
