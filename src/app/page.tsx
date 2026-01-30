@@ -1,6 +1,11 @@
+import { Box } from "@mantine/core";
+import { HeroSection } from "./(main)/components";
+
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
-export default Home
+    <>
+      <HeroSection />
+    </>
+  );
+};
+export default Home;

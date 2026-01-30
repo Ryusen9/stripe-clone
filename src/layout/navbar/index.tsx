@@ -10,8 +10,8 @@ export default function Navbar() {
   // const [opened, { toggle }] = useDisclosure();
   const [opened, { open, close }] = useDisclosure(false);
   return (
-    <nav className="w-full absolute top-0 left-0 z-1000">
-      <Box className="max-w-[1064]! mx-auto! py-4! px-4! flex! items-center! justify-between!">
+    <nav className="w-full sticky top-0 left-0 z-1000 border-b border-gray-400">
+      <Box className="max-w-[1264]! mx-auto! py-5! px-4! flex! items-center! justify-between!">
         {/* logo */}
         <Flex display="flex" align="center" gap={4}>
           <Link href="/" className="font-grotesk font-bold text-2xl">
@@ -23,8 +23,8 @@ export default function Navbar() {
           </Box>
         </Flex>
         {/* button: desktop */}
-        <Box className="hidden! lg:flex! items-center! gap-1!">
-          <RoundedBtn backgroundColor="transparent" className="border!">
+        <Box className="hidden! lg:flex! items-center! gap-2!">
+          <RoundedBtn backgroundColor="transparent" className="border! text-black!">
             <Link href={"/sign-in"}>Sign in</Link>
           </RoundedBtn>
           <RoundedBtn>Contact sales</RoundedBtn>

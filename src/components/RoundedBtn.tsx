@@ -14,7 +14,7 @@ export default function RoundedBtn({
 }: RoundedBtnProps) {
   return (
     <button
-      className={`px-4 py-1.5 rounded-lg! bg-skyBlue flex items-center justify-center text-sm! font-semibold! gap-1 font-grotesk ${className}`}
+      className={`px-4 py-3 text-white rounded-lg! bg-secondary flex items-center justify-center text-sm! font-semibold! gap-1 font-grotesk ${className}`}
       style={backgroundColor ? { backgroundColor } : undefined}
     >
       <span>{children}</span>
