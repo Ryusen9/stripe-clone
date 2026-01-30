@@ -1,15 +1,9 @@
 "use client";
 import { Box, SimpleGrid, Text, Anchor, Stack, Group } from "@mantine/core";
 import { motion } from "motion/react";
-import { Globe, Twitter, Github, Linkedin } from "lucide-react";
-import { footerLinks } from "@/constants";
+import { Globe } from "lucide-react";
+import { footerLinks, socialLinks } from "@/constants";
 
-
-const socialLinks = [
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-];
 
 const Footer = () => {
   return (

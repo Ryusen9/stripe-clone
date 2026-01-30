@@ -6,9 +6,12 @@ import shape4 from "../../public/logos/shape_4.svg";
 import {
   Building2,
   Cpu,
+  Github,
   Heart,
+  Linkedin,
   Rocket,
   ShoppingBasket,
+  Twitter,
   Umbrella,
 } from "lucide-react";
 
@@ -161,3 +164,9 @@ export const footerLinks = {
     { label: "Sitemap", href: "#" },
   ],
 };
+
+export const socialLinks = [
+  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Github, href: "#", label: "GitHub" },
+  { icon: Linkedin, href: "#", label: "LinkedIn" },
+];
