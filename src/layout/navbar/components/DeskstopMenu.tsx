@@ -52,7 +52,7 @@ const DeskstopMenu = () => {
             {/* Submenu content */}
             {navLinks.subMenu && (
               <PopoverDropdown
-                className="p-1!"
+                className="p-1! z-100000!"
                 onMouseEnter={() => setOpenedIndex(idx)}
                 onMouseLeave={() => setOpenedIndex(null)}
               >

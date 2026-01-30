@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import logo from "../../public/logo.png";
 import "./globals.css";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
-import { Footer, Navbar } from "@/layout";
+import { Footer } from "@/layout";
 import { SmoothScroll } from "@/components";
 import '@mantine/core/styles.css';
 
@@ -28,7 +28,6 @@ export default function RootLayout({
       <body className={`antialiased`} cz-shortcut-listen="true">
         <MantineProvider>
           <SmoothScroll />
-          <Navbar />
           {children}
           <Footer />
         </MantineProvider>

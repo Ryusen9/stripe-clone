@@ -1,10 +1,10 @@
-import { Box } from "@mantine/core";
-import { HeroSection } from "./(main)/components";
+import { HeroSection, HomeGrid } from "./(main)/components";
 
 const Home = () => {
   return (
     <>
       <HeroSection />
+      <HomeGrid />
     </>
   );
 };
