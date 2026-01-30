@@ -1,10 +1,11 @@
-import { HeroSection, HomeGrid } from "./(main)/components";
+import { HeroSection, HomeGrid, Letter } from "./(main)/components";
 
 const Home = () => {
   return (
     <>
       <HeroSection />
       <HomeGrid />
+      <Letter />
     </>
   );
 };

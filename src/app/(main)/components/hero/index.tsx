@@ -24,7 +24,7 @@ export default function HeroSection() {
   const formattedValue = value.toFixed(8);
 
   return (
-    <Box className="border-b! border-gray-400! relative!">
+    <Box className="border-b! border-gray-400! relative! overflow-hidden!">
       <Image
         src={HeroBg}
         alt="Hero Background"

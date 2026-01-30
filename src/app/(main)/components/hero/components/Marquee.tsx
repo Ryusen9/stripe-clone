@@ -17,7 +17,14 @@ const MarqueeComponent = () => {
     <Box className="border-t! border-gray-400! h-18! flex! items-center! overflow-hidden! justify-center!">
       <Marquee autoFill={true} speed={50} pauseOnHover={true} gradient={false}>
         {logos.map((logo, idx) => (
-          <Image src={logo} alt="logo" key={idx} width={150} height={150} />
+          <Image
+            src={logo}
+            alt="logo"
+            key={idx}
+            width={150}
+            height={150}
+            className="mx-8"
+          />
         ))}
       </Marquee>
     </Box>
