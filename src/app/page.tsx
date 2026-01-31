@@ -1,4 +1,9 @@
-import { HeroSection, HomeGrid, Letter } from "./(main)/components";
+import {
+  GlobalBackbone,
+  HeroSection,
+  HomeGrid,
+  Letter,
+} from "./(main)/components";
 
 const Home = () => {
   return (
@@ -6,6 +11,7 @@ const Home = () => {
       <HeroSection />
       <HomeGrid />
       <Letter />
+      <GlobalBackbone />
     </>
   );
 };
