@@ -1,4 +1,5 @@
 import {
+  AccordionSection,
   GlobalBackbone,
   HeroSection,
   HomeGrid,
@@ -12,6 +13,7 @@ const Home = () => {
       <HomeGrid />
       <Letter />
       <GlobalBackbone />
+      <AccordionSection />
     </>
   );
 };
