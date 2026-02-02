@@ -10,6 +10,13 @@ import accrodImg1 from "../../public/Photos/accord1.png";
 import accrodImg2 from "../../public/Photos/accord2.png";
 import accrodImg3 from "../../public/Photos/accord3.png";
 import accrodImg4 from "../../public/Photos/accord4.jpg";
+import caroImg1 from "../../public/Image-foundation/10001.png";
+import caroImg2 from "../../public/Image-foundation/10002.png";
+import caroImg3 from "../../public/Image-foundation/10003.png";
+import caroImg4 from "../../public/Image-foundation/10004.png";
+import caroImg5 from "../../public/Image-foundation/10005.png";
+import caroImg6 from "../../public/Image-foundation/10006.png";
+import caroImg7 from "../../public/Image-foundation/10007.png";
 
 export const backboneData = [
   { num: "135+", desc: "currencies and payment methods supported", img: img1 },
@@ -87,5 +94,38 @@ export const accordionData = [
         norm: "Payments, Stripe Sigma, and Radar",
       },
     ],
+  },
+];
+
+export const caroFoundationData = [
+  {
+    btnTxt: "item1",
+    desc: "Lovable grows into a vibe-coding juggernaut with Stripe.",
+    img: caroImg1,
+  },
+  {
+    btnTxt: "item2",
+    desc: "Lyft scales its marketplace with Stripe.",
+    img: caroImg2,
+  },
+  {
+    btnTxt: "item3",
+    desc: "Doordash powers on-demand delivery with Stripe.",
+    img: caroImg3,
+  },
+  {
+    btnTxt: "item4",
+    desc: "Salesforce empowers global subscriptions with Stripe.",
+    img: caroImg4,
+  },
+  {
+    btnTxt: "item5",
+    desc: "Meta scales payments for its global community with Stripe.",
+    img: caroImg5,
+  },
+  {
+    btnTxt: "item6",
+    desc: "Amazon ramps up international sales with Stripe.",
+    img: caroImg6,
   },
 ];
