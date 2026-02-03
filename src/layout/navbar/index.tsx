@@ -38,8 +38,8 @@ export default function Navbar() {
         {/* button: desktop */}
         <Box className="hidden! lg:flex! items-center! gap-2!">
           <RoundedBtn
-            backgroundColor="transparent"
-            className="border! text-black!"
+            backgroundColor="bg-white!"
+            className="text-black! bg-white!"
           >
             <Link href={"/sign-in"}>Sign in</Link>
           </RoundedBtn>

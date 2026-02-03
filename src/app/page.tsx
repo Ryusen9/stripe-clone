@@ -2,6 +2,7 @@ import {
   AccordionSection,
   BookOfWeek,
   CarousalFoundation,
+  GetReady,
   GlobalBackbone,
   HeroSection,
   HomeGrid,
@@ -18,6 +19,7 @@ const Home = () => {
       <AccordionSection />
       <CarousalFoundation />
       <BookOfWeek />
+      <GetReady />
     </>
   );
 };

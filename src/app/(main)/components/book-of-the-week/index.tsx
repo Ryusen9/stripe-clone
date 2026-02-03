@@ -6,24 +6,24 @@ import logo2 from "../../../../../public/10002.webp";
 
 export default function BookOfWeek() {
   return (
-    <Box className="max-w-317.5 mx-auto border-r border-l px-4 pb-10 border-gray-400 flex flex-col gap-8">
+    <Box className="max-w-317.5 mx-auto border-r border-l px-4 pb-10 border-gray-400 flex flex-col gap-8 py-10">
       <Box className="text-lg md:text-3xl font-grotesk font-medium">
         Book of the week <br />{" "}
         <span className="text-gray-400">
           Entrepreneurship starts with ideas.
         </span>
       </Box>
-      <Box className="flex flex-col lg:flex-row">
-        <Box className="w-full lg:min-w-105 min-h-full p-5 rounded-tl-2xl rounded-tr-2xl lg:rounded-tr-none lg:rounded-bl-2xl lg:rounded-tl-2xl flex items-center bg-amber-900 justify-center">
+      <Box className="flex flex-col lg:flex-row lg:h-150">
+        <Box className="w-full lg:min-w-115 min-h-full p-5 rounded-tl-2xl rounded-tr-2xl lg:rounded-tr-none lg:rounded-bl-2xl lg:rounded-tl-2xl flex items-center bg-amber-900 justify-center">
           <Image
             src={bookImg.src}
             alt="book cover"
             width={200}
             height={300}
-            className="h-[80%] max-w-sm"
+            className="lg:h-[80%] w-80"
           />
         </Box>
-        <Box className="flex relative rounded-bl-2xl rounded-br-2xl lg:rounded-bl-none lg:rounded-tr-2xl lg:rounded-br-2xl flex-col bg-[#F8FAFD] items-center justify-between px-4 py-4 lg:p-15">
+        <Box className="flex relative rounded-bl-2xl rounded-br-2xl lg:rounded-bl-none lg:rounded-tr-2xl lg:rounded-br-2xl flex-col bg-[#F8FAFD] items-center justify-between px-4 py-4 lg:px-15 lg:py-25 xl:py-40">
           <Box className="hidden lg:block absolute -top-20 right-30">
             <svg
               xmlns="http://www.w3.org/2000/svg"

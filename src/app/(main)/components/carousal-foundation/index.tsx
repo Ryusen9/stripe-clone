@@ -4,9 +4,11 @@ import { RoundedBtn } from "@/components";
 import { caroFoundationData } from "@/data";
 import { ActionIcon, Box } from "@mantine/core";
 import CarousalCard from "./component/carousalCard";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, ChevronRight } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback } from "react";
+import rightBg from "../../../../../public/Photos/gridRight.png";
+import Image from "next/image";
 
 export default function CarousalFoundation() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -25,7 +27,7 @@ export default function CarousalFoundation() {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
   return (
-    <Box className="max-w-317.5 mx-auto border-r border-l border-gray-400 flex flex-col px-4">
+    <Box className="max-w-317.5 mx-auto border-r border-l border-b border-gray-400 flex flex-col px-4 py-10">
       {/* top */}
       <Box className="flex flex-col lg:flex-row items-start justify-between w-full">
         <Box className="flex flex-col gap-6">
@@ -34,7 +36,7 @@ export default function CarousalFoundation() {
             growth
           </p>
           <RoundedBtn className="max-w-50! hidden! lg:flex!">
-            Stripe for enterprises
+            Stripe for startups
           </RoundedBtn>
         </Box>
         <p className="max-w-xl mt-4 lg:mt-0 text-sm md:text-xl font-grotesk text-gray-500">
@@ -43,7 +45,7 @@ export default function CarousalFoundation() {
           infrastructure.
         </p>
         <RoundedBtn className="mt-5 bg-secondary! lg:hidden! flex!">
-          Stripe for enterprises
+          Stripe for startups
         </RoundedBtn>
       </Box>
       {/* carousal */}
@@ -77,6 +79,43 @@ export default function CarousalFoundation() {
                 />
               </Box>
             ))}
+          </Box>
+        </Box>
+        {/* grid */}
+        <Box className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-10">
+          <Box className="overflow-hidden relative px-6 py-8 bg-[#F8FAFD] flex flex-col gap-4 rounded-2xl">
+            <p className="font-grotesk z-10 max-w-100">
+              <span className="font-semibold">Stripe Startups program.</span>{" "}
+              Access financial benefits, a focused community, and expert
+              resources to help you grow your business.
+            </p>
+            <button className="flex items-center font-grotesk font-bold text-secondary">
+              Apply now <ChevronRight size={15} />
+            </button>
+            <Image
+              src={rightBg.src}
+              alt="bg-right"
+              width={200}
+              height={200}
+              className="absolute w-full h-full hidden md:block -right-35 md-right-50 top-0 z-0"
+            />
+          </Box>
+          <Box className="overflow-hidden relative px-6 py-8 bg-[#F8FAFD] flex flex-col gap-4 rounded-2xl">
+            <p className="font-grotesk z-10 max-w-100">
+              <span className="font-semibold">Stripe Atlas.</span> Get
+              everything you need to fundraise, bank, and accept payments in two
+              business days.
+            </p>
+            <button className="flex items-center font-grotesk font-bold text-secondary">
+              Start your company <ChevronRight size={15} />
+            </button>
+            <Image
+              src={rightBg.src}
+              alt="bg-right"
+              width={200}
+              height={200}
+              className="absolute w-full h-full hidden md:block -right-35 md-right-50 top-0 z-0"
+            />
           </Box>
         </Box>
       </Box>

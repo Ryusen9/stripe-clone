@@ -1,4 +1,4 @@
-import img1 from "../../public/Photos/image2.png";
+import img1 from "../../public/Photos/10005.webp";
 import img2 from "../../public/Photos/image3.png";
 import img3 from "../../public/Photos/image4.png";
 import img4 from "../../public/Photos/image6.jpg";
@@ -9,14 +9,14 @@ import logo4 from "../../public/logos/download4.svg";
 import accrodImg1 from "../../public/Photos/accord1.png";
 import accrodImg2 from "../../public/Photos/accord2.png";
 import accrodImg3 from "../../public/Photos/accord3.png";
-import accrodImg4 from "../../public/Photos/accord4.jpg";
+import accrodImg4 from "../../public/Photos/accord4.png";
 import caroImg1 from "../../public/Image-foundation/10001.png";
 import caroImg2 from "../../public/Image-foundation/10002.png";
 import caroImg3 from "../../public/Image-foundation/10003.png";
 import caroImg4 from "../../public/Image-foundation/10004.png";
 import caroImg5 from "../../public/Image-foundation/10005.png";
 import caroImg6 from "../../public/Image-foundation/10006.png";
-import caroImg7 from "../../public/Image-foundation/10007.png";
+import { LayoutGrid, LifeBuoy, Users } from "lucide-react";
 
 export const backboneData = [
   { num: "135+", desc: "currencies and payment methods supported", img: img1 },
@@ -94,6 +94,24 @@ export const accordionData = [
         norm: "Payments, Stripe Sigma, and Radar",
       },
     ],
+  },
+];
+
+export const backboneGrid = [
+  {
+    icon: LayoutGrid,
+    btnText: "View services",
+    desc: "Professional services. Get tailored guidance from Stripe on implementation, complex integrations, or major migrations.",
+  },
+  {
+    icon: Users,
+    btnText: "View partners",
+    desc: "Stripe-certified experts. Work with a Stripe consulting partner that can integrate and deploy Stripe solutions on your behalf.",
+  },
+  {
+    icon: LifeBuoy,
+    btnText: "View plans",
+    desc: "Support plans. Receive ongoing assistance and day-to-day support for technical questions with tiered plans based on your needs.",
   },
 ];
 

@@ -10,12 +10,12 @@ const GridSec = () => {
   console.log(activeIdx);
   return (
     <Box>
-      <SimpleGrid className="gap-0!" cols={{ base: 2, lg: 4 }}>
+      <SimpleGrid className="gap-0!" cols={{ base: 2, md: 4 }}>
         {backboneData.map((item, idx) => (
           <Box
             key={idx}
             onClick={() => setActiveIdx(idx)}
-            className={`flex flex-col lg:border-t lg:border-b border-gray-400 text-white lg:text-gray-400 items-center justify-center md:p-10 p-3 lg:hover:text-gray-900 duration-200 cursor-pointer lg:hover:border-t-3 lg:hover:border-b-3 ${activeIdx === idx ? "lg:text-gray-900 lg:border-t-3 lg:border-b-3" : ""}`}
+            className={`flex flex-col lg:border-t lg:border-b border-gray-400 text-white lg:text-gray-400 items-center justify-center md:p-10 p-3 lg:hover:text-white duration-200 cursor-pointer lg:hover:border-t-3 lg:hover:border-b-3 ${activeIdx === idx ? "lg:text-white lg:border-t-3 lg:border-b-3" : ""}`}
           >
             <p className="text-3xl md:text-5xl font-grotesk font-medium">
               {item.num}

@@ -51,7 +51,7 @@ const DeskstopAccord = () => {
                       alt={accItem.title}
                       width={300}
                       height={200}
-                      className="w-full h-105 object-cover rounded-2xl"
+                      className="w-full h-125 object-cover rounded-2xl"
                     />
                     <Box className="grid grid-cols-3">
                       {accItem.bottom.map((bottomItem, bIdx) => (

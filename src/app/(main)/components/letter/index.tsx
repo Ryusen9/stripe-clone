@@ -14,13 +14,13 @@ export default function Letter() {
             The internet economy <br />
             conference
           </p>
-          <RoundedBtn className="w-55">Join us at session</RoundedBtn>
+          <RoundedBtn className="w-55 bg-white! text-secondary!">Join us at session</RoundedBtn>
         </Box>
         {/* grid */}
         <SimpleGrid cols={{ base: 2, md: 3 }}>
           <Box className="flex items-center justify-center lg:justify-start row-start-2 col-span-2 lg:col-span-1 lg:row-start-1">
             <p className="text-2xl md:text-3xl text-center lg:text-start text-white font-grotesk font-semibold">
-              <span className="italic font-bold">Stripe</span> Session
+              <span className="font-bold">Stripe</span> Session
             </p>
           </Box>
           <Box className="text-sm md:text-base flex items-center justify-start lg:justify-center">
