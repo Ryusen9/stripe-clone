@@ -1,9 +1,29 @@
+"use client";
+
 import { RoundedBtn } from "@/components";
 import { caroFoundationData } from "@/data";
-import { Box } from "@mantine/core";
+import { ActionIcon, Box } from "@mantine/core";
 import CarousalCard from "./component/carousalCard";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import useEmblaCarousel from "embla-carousel-react";
+import { useCallback } from "react";
 
 export default function CarousalFoundation() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    align: "start",
+    loop: false,
+    dragFree: false,
+    containScroll: "trimSnaps",
+    startIndex: 0,
+  });
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
   return (
     <Box className="max-w-317.5 mx-auto border-r border-l border-gray-400 flex flex-col px-4">
       {/* top */}
@@ -27,12 +47,38 @@ export default function CarousalFoundation() {
         </RoundedBtn>
       </Box>
       {/* carousal */}
-      <Box>
-        {caroFoundationData.map((item, idx) => (
-          <Box key={idx}>
-            <CarousalCard />
+      <Box className="py-15">
+        {/* controls */}
+        <Box className="w-full hidden md:flex gap-2 items-center justify-end pb-10">
+          <ActionIcon
+            size="lg"
+            className="bg-transparent! border! border-secondary! text-secondary! hover:bg-secondary! hover:text-white! duration-200"
+            onClick={scrollPrev}
+          >
+            <ArrowLeft />
+          </ActionIcon>
+          <ActionIcon
+            size="lg"
+            className="bg-transparent! border! border-secondary! text-secondary! hover:bg-secondary! hover:text-white! duration-200"
+            onClick={scrollNext}
+          >
+            <ArrowRight />
+          </ActionIcon>
+        </Box>
+        {/* carousal Contents */}
+        <Box className="overflow-hidden" ref={emblaRef}>
+          <Box className="flex gap-6">
+            {caroFoundationData.map((item, idx) => (
+              <Box key={idx} className="flex-[0_0_320px]">
+                <CarousalCard
+                  img={item.img}
+                  desc={item.desc}
+                  btText={item.btnTxt}
+                />
+              </Box>
+            ))}
           </Box>
-        ))}
+        </Box>
       </Box>
     </Box>
   );
