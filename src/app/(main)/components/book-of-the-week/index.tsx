@@ -1,6 +1,8 @@
 import { Box } from "@mantine/core";
 import bookImg from "../../../../../public/7eb3cfb3-2342-4bae-9914-7a8102a359db.webp";
 import Image from "next/image";
+import logo1 from "../../../../../public/10001.svg";
+import logo2 from "../../../../../public/10002.webp";
 
 export default function BookOfWeek() {
   return (
@@ -12,7 +14,7 @@ export default function BookOfWeek() {
         </span>
       </Box>
       <Box className="flex flex-col lg:flex-row">
-        <Box className="w-full lg:min-w-105 h-105 p-5 flex items-center bg-amber-900 md:rounded-tl-2xl md:rounded-bl-2xl rounded-tr-2xl rounded-tl-2xl justify-center bg-4">
+        <Box className="w-full lg:min-w-105 min-h-full p-5 rounded-tl-2xl rounded-tr-2xl lg:rounded-tr-none lg:rounded-bl-2xl lg:rounded-tl-2xl flex items-center bg-amber-900 justify-center">
           <Image
             src={bookImg.src}
             alt="book cover"
@@ -21,7 +23,7 @@ export default function BookOfWeek() {
             className="h-[80%] max-w-sm"
           />
         </Box>
-        <Box className="flex relative flex-col bg-[#F8FAFD] items-center justify-between px-4 py-4 lg:p-15">
+        <Box className="flex relative rounded-bl-2xl rounded-br-2xl lg:rounded-bl-none lg:rounded-tr-2xl lg:rounded-br-2xl flex-col bg-[#F8FAFD] items-center justify-between px-4 py-4 lg:p-15">
           <Box className="hidden lg:block absolute -top-20 right-30">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +51,14 @@ export default function BookOfWeek() {
               Joel Mokyr
             </p>
             <p className="pt-8 text-sm font-grotesk font-medium text-gray-700">
-              {`The Industrial Revolution reshaped the world, but why it began in Europe is still a puzzle. ${(<span className="underline">Mokyr</span>)} traces its origins to a shift in how knowledge was used: scientists and skilled workers began testing new ideas on pumps, furnaces, and spinning machines, and publishing what worked so others could improve it. That collective habit, what Mokyr calls a culture of growth, became the engine of Europe’s economic success.`}
+              The Industrial Revolution reshaped the world, but why it began in
+              Europe is still a puzzle.{" "}
+              <span className="underline font-semibold">Mokyr</span> traces its
+              origins to a shift in how knowledge was used: scientists and
+              skilled workers began testing new ideas on pumps, furnaces, and
+              spinning machines, and publishing what worked so others could
+              improve it. That collective habit, what Mokyr calls a culture of
+              growth, became the engine of Europe&apos;s economic success.
             </p>
           </Box>
           <Box className="flex flex-col w-full items-start justify-start pt-10">
@@ -57,11 +66,31 @@ export default function BookOfWeek() {
               For more ideas on economic progress and technological advancement,
               see our in-house publications:
             </p>
+            <Box className="flex items-center justify-start gap-2 pt-4">
+              <Box className="flex items-center justify-center gap-2 border hover:border-gray-800 duration-200 p-0.5 rounded-md pr-2 border-gray-400/20 cursor-pointer">
+                <Image
+                  src={logo1.src}
+                  alt="logo1"
+                  width={20}
+                  height={20}
+                  className="w-8 h-8"
+                />
+                <p className="font-grotesk text-xs">Stripe Press</p>
+              </Box>
+              <Box className="flex items-center justify-center gap-2 border hover:border-gray-800 duration-200 p-0.5 rounded-md pr-2 border-gray-400/20 cursor-pointer">
+                <Image
+                  src={logo2.src}
+                  alt="logo1"
+                  width={20}
+                  height={20}
+                  className="w-8 h-8"
+                />
+                <p className="font-grotesk text-xs">Work in Progress</p>
+              </Box>
+            </Box>
           </Box>
         </Box>
       </Box>
-      {/* logo */}
     </Box>
   );
 }
-``;
