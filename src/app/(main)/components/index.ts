@@ -6,6 +6,7 @@ import AccordionSection from "./accordion-section";
 import CarousalFoundation from "./carousal-foundation";
 import BookOfWeek from "./book-of-the-week";
 import GetReady from "./get-ready";
+import ReviewSection from "./reviews";
 
 export {
   HeroSection,
@@ -16,4 +17,5 @@ export {
   CarousalFoundation,
   BookOfWeek,
   GetReady,
+  ReviewSection,
 };

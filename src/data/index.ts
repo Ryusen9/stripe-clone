@@ -16,7 +16,7 @@ import caroImg3 from "../../public/Image-foundation/10003.png";
 import caroImg4 from "../../public/Image-foundation/10004.png";
 import caroImg5 from "../../public/Image-foundation/10005.png";
 import caroImg6 from "../../public/Image-foundation/10006.png";
-import { LayoutGrid, LifeBuoy, Users } from "lucide-react";
+import { LayoutGrid, LifeBuoy, Rocket, ShieldBan, TrendingUp, Users } from "lucide-react";
 
 export const backboneData = [
   { num: "135+", desc: "currencies and payment methods supported", img: img1 },
@@ -145,5 +145,20 @@ export const caroFoundationData = [
     btnTxt: "item6",
     desc: "Amazon ramps up international sales with Stripe.",
     img: caroImg6,
+  },
+];
+
+export const reviewsGrid = [
+  {
+    icon: Rocket,
+    desc: "Get to market faster.Launch and scale payments products with lower operational overhead using embedded components and no-code tools.",
+  },
+  {
+    icon: TrendingUp,
+    desc: "Grow new lines of revenue.Monetize platform transactions—including payments, card interchange, and financing fees.",
+  },
+  {
+    icon: ShieldBan,
+    desc: "Manage platform risk.Stay ahead of global regulations with tools for compliance, credit risk, fraud prevention, and account security.",
   },
 ];

@@ -31,7 +31,22 @@ export default function AccordionSection() {
               <Box className="text-secondary p-2 rounded-lg border border-gray-400">
                 <item.icon size={20} />
               </Box>
-              <p className="flex-1">{item.desc}</p>
+              <p className="flex-1 max-w-80">
+                {(() => {
+                  const firstStop = item.desc.indexOf(".");
+                  if (firstStop === -1) {
+                    return item.desc;
+                  }
+                  const firstSentence = item.desc.slice(0, firstStop + 1);
+                  const rest = item.desc.slice(firstStop + 1).trim();
+                  return (
+                    <>
+                      <span className="font-semibold">{firstSentence}</span>
+                      {rest ? ` ${rest}` : ""}
+                    </>
+                  );
+                })()}
+              </p>
               <button className="flex items-center justify-start text-secondary font-grotesk font-semibold">
                 {item.btnText} <ChevronRight />
               </button>

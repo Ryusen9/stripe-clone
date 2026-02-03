@@ -7,6 +7,7 @@ import {
   HeroSection,
   HomeGrid,
   Letter,
+  ReviewSection,
 } from "./(main)/components";
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <GlobalBackbone />
       <AccordionSection />
       <CarousalFoundation />
+      <ReviewSection />
       <BookOfWeek />
       <GetReady />
     </>
