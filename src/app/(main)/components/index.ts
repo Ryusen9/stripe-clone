@@ -4,6 +4,7 @@ import Letter from "./letter";
 import GlobalBackbone from "./globalBackbone";
 import AccordionSection from "./accordion-section";
 import CarousalFoundation from "./carousal-foundation";
+import BookOfWeek from "./book-of-the-week";
 
 export {
   HeroSection,
@@ -12,4 +13,5 @@ export {
   GlobalBackbone,
   AccordionSection,
   CarousalFoundation,
+  BookOfWeek,
 };

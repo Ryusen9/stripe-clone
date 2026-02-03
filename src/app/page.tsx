@@ -1,5 +1,6 @@
 import {
   AccordionSection,
+  BookOfWeek,
   CarousalFoundation,
   GlobalBackbone,
   HeroSection,
@@ -16,6 +17,7 @@ const Home = () => {
       <GlobalBackbone />
       <AccordionSection />
       <CarousalFoundation />
+      <BookOfWeek />
     </>
   );
 };
