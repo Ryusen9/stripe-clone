@@ -5,6 +5,7 @@ import imgSs2 from "../../../../../public/Photos/ss2.png";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { reviewsGrid } from "@/data";
+import Testimonials from "./components/testimonials";
 
 export default function ReviewSection() {
   return (
@@ -73,6 +74,10 @@ export default function ReviewSection() {
               </button>
             </Box>
           ))}
+        </Box>
+        {/* Testimonial section */}
+        <Box>
+          <Testimonials />
         </Box>
       </Box>
     </Box>

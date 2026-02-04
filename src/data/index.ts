@@ -16,7 +16,38 @@ import caroImg3 from "../../public/Image-foundation/10003.png";
 import caroImg4 from "../../public/Image-foundation/10004.png";
 import caroImg5 from "../../public/Image-foundation/10005.png";
 import caroImg6 from "../../public/Image-foundation/10006.png";
-import { LayoutGrid, LifeBuoy, Rocket, ShieldBan, TrendingUp, Users } from "lucide-react";
+import amazonLogo from "../../public/logos/amazon.svg";
+import instacartLogo from "../../public/logos/instacart.svg";
+import shopifyLogo from "../../public/logos/shopify.svg";
+import substackLogo from "../../public/logos/substack.svg";
+import {
+  LayoutGrid,
+  LifeBuoy,
+  Rocket,
+  ShieldBan,
+  TrendingUp,
+  Users,
+} from "lucide-react";
+import type { ReactNode } from "react";
+import type { StaticImageData } from "next/image";
+
+export type LogoItem = {
+  id: string;
+  label: string;
+  logoSrc?: StaticImageData | string | null;
+  logoNode?: ReactNode;
+};
+
+export type TestimonialItem = {
+  id: string;
+  quote: string;
+  authorName: string;
+  authorTitle: string;
+  company: string;
+  ctaText: string;
+  ctaHref: string;
+  avatarUrl: string;
+};
 
 export const backboneData = [
   { num: "135+", desc: "currencies and payment methods supported", img: img1 },
@@ -160,5 +191,63 @@ export const reviewsGrid = [
   {
     icon: ShieldBan,
     desc: "Manage platform risk.Stay ahead of global regulations with tools for compliance, credit risk, fraud prevention, and account security.",
+  },
+];
+
+export const testimonialLogos: LogoItem[] = [
+  { id: "amazon", label: "Amazon", logoSrc: amazonLogo },
+  { id: "shopify", label: "Shopify", logoSrc: shopifyLogo },
+  { id: "substack", label: "Substack", logoSrc: substackLogo },
+  { id: "instacart", label: "Instacart", logoSrc: instacartLogo },
+];
+
+export const testimonialItems: TestimonialItem[] = [
+  {
+    id: "amazon",
+    quote:
+      "With Stripe, we have a global technology partner to help teams keep growing and evolving in new markets.",
+    authorName: "Kurtis Moyer",
+    authorTitle: "Lead Product Manager of Payments",
+    company: "Amazon",
+    ctaText: "Read the story",
+    ctaHref: "#",
+    avatarUrl:
+      "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=192&h=192&q=80",
+  },
+  {
+    id: "shopify",
+    quote:
+      "We streamlined onboarding and improved payment success rates while keeping the experience clean and consistent for customers.",
+    authorName: "Jordan Lee",
+    authorTitle: "Payments Product Lead",
+    company: "Shopify",
+    ctaText: "Read the story",
+    ctaHref: "#",
+    avatarUrl:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=192&h=192&q=80",
+  },
+  {
+    id: "substack",
+    quote:
+      "Our creators can now get paid faster, with fewer failed payments—and less time spent on support.",
+    authorName: "Avery Chen",
+    authorTitle: "Platform PM",
+    company: "Substack",
+    ctaText: "Read the story",
+    ctaHref: "#",
+    avatarUrl:
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=192&h=192&q=80",
+  },
+  {
+    id: "instacart",
+    quote:
+      "We expanded into new markets with a payments setup that scales, stays compliant, and keeps checkout effortless.",
+    authorName: "Sam Rivera",
+    authorTitle: "Director, Product",
+    company: "Instacart",
+    ctaText: "Read the story",
+    ctaHref: "#",
+    avatarUrl:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=192&h=192&q=80",
   },
 ];
