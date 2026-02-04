@@ -20,6 +20,10 @@ import amazonLogo from "../../public/logos/amazon.svg";
 import instacartLogo from "../../public/logos/instacart.svg";
 import shopifyLogo from "../../public/logos/shopify.svg";
 import substackLogo from "../../public/logos/substack.svg";
+import ss6 from "../../public/Photos/ss6.png";
+import ss7 from "../../public/Photos/ss7.png";
+import ss8 from "../../public/Photos/ss8.png";
+
 import {
   LayoutGrid,
   LifeBuoy,
@@ -253,7 +257,25 @@ export const testimonialItems: TestimonialItem[] = [
 ];
 
 export const purposeData = [
-  {num: "500M+", desc: "API requests per day"},
-  {num: "10K+", desc: "API requests per second"},
-  {num: "150k+", desc: "Transactions per second"},
-]
+  { num: "500M+", desc: "API requests per day" },
+  { num: "10K+", desc: "API requests per second" },
+  { num: "150k+", desc: "Transactions per second" },
+];
+
+export const purposeDataGrid = [
+  {
+    desc: "Don’t code?Set up billing, take in-person payments, or share a payment link—right from the Stripe Dashboard, no code required.",
+    btnText: "Explore no code.",
+    img: ss6,
+  },
+  {
+    desc: "Use a pre-integrated platform.Browse our directory of platforms that integrate Stripe with website-building tools.",
+    btnText: "See directory.",
+    img: ss7,
+  },
+  {
+    desc: "Build your own integration.Use our SDKs, APIs, MCP server, and AI developer tools to build and maintain your own integration with Stripe.",
+    btnText: "Get started.",
+    img: ss8,
+  },
+];

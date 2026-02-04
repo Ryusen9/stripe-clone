@@ -4,7 +4,8 @@ import ss3 from "../../../../../public/Photos/ss3.png";
 import ss4 from "../../../../../public/Photos/ss4.png";
 import ss5 from "../../../../../public/Photos/ss5.png";
 import Image from "next/image";
-import { purposeData } from "@/data";
+import { purposeData, purposeDataGrid } from "@/data";
+import { ChevronRight } from "lucide-react";
 
 export default function Purpose() {
   return (
@@ -77,7 +78,8 @@ export default function Purpose() {
                 <p
                   className="text-5xl font-grotesk"
                   style={{
-                    background: "linear-gradient(to right, #A96274, #C259FF, #6A20A4)",
+                    background:
+                      "linear-gradient(to right, #A96274, #C259FF, #6A20A4)",
                     backgroundClip: "text",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
@@ -89,6 +91,51 @@ export default function Purpose() {
               </Box>
             ))}
           </Box>
+        </Box>
+        {/* fourth section */}
+        <Box className="px-4 grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3">
+          {purposeDataGrid.map((item, idx) => (
+            <Box
+              key={idx}
+              className="flex flex-col items-start justify-between min-h-fit gap-2 py-5"
+            >
+              <Box className="w-full h-70 rounded-2xl overflow-hidden">
+                <Image
+                  src={item.img}
+                  alt={item.btnText}
+                  width={200}
+                  height={200}
+                  className="h-full w-full"
+                />
+              </Box>
+              <p className="flex-1 max-w-80 text-white">
+                {(() => {
+                  const dotIndex = item.desc.indexOf(".");
+                  const questionIndex = item.desc.indexOf("?");
+                  const firstStop =
+                    dotIndex === -1
+                      ? questionIndex
+                      : questionIndex === -1
+                        ? dotIndex
+                        : Math.min(dotIndex, questionIndex);
+                  if (firstStop === -1) {
+                    return item.desc;
+                  }
+                  const firstSentence = item.desc.slice(0, firstStop + 1);
+                  const rest = item.desc.slice(firstStop + 1).trim();
+                  return (
+                    <>
+                      <span className="font-semibold">{firstSentence}</span>
+                      {rest ? ` ${rest}` : ""}
+                    </>
+                  );
+                })()}
+              </p>
+              <button className="flex items-center justify-start text-secondary font-grotesk font-semibold">
+                {item.btnText} <ChevronRight />
+              </button>
+            </Box>
+          ))}
         </Box>
       </Box>
     </Box>
