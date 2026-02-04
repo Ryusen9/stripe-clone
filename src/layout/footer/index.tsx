@@ -4,14 +4,14 @@ import { motion } from "motion/react";
 import { Globe } from "lucide-react";
 import { footerLinks, socialLinks } from "@/constants";
 
-
 const Footer = () => {
   return (
-    <Box
-      component="footer"
-      className="bg-black"
-    >
-      <Box mx="auto" className="border-r border-l border-gray-400/40 h-full px-4 pt-20 pb-10" style={{ maxWidth: "1270px" }}>
+    <Box component="footer" className="bg-white">
+      <Box
+        mx="auto"
+        className="border-r border-l border-gray-400/40 h-full px-4 pt-20 pb-10"
+        style={{ maxWidth: "1270px" }}
+      >
         <Stack gap={48}>
           {/* Links Grid */}
           <SimpleGrid cols={{ base: 2, sm: 2, md: 4 }} spacing="xl">
@@ -27,7 +27,7 @@ const Footer = () => {
                   <Text
                     fw={600}
                     size="sm"
-                    c="white"
+                    c="gray.9"
                     tt="uppercase"
                     style={{ letterSpacing: "0.05em" }}
                   >
@@ -38,12 +38,12 @@ const Footer = () => {
                       <Anchor
                         key={link.label}
                         href={link.href}
-                        c="gray.4"
+                        c="gray.7"
                         size="sm"
                         underline="never"
                         style={{
                           transition: "color 0.2s",
-                          ":hover": { color: "#fff" },
+                          ":hover": { color: "#111827" },
                         }}
                       >
                         {link.label}
@@ -59,14 +59,14 @@ const Footer = () => {
           <Box
             pt={32}
             style={{
-              borderTop: "1px solid #ffffff1a",
+              borderTop: "1px solid #e5e7eb",
             }}
           >
             <Stack gap="lg">
               <Group justify="space-between" wrap="wrap" gap="md">
                 <Group gap="xs">
-                  <Globe size={16} color="#8892a6" />
-                  <Text size="sm" c="gray.4">
+                  <Globe size={16} color="#6b7280" />
+                  <Text size="sm" c="gray.7">
                     United States
                   </Text>
                 </Group>
@@ -80,11 +80,11 @@ const Footer = () => {
                     >
                       <Anchor
                         href={social.href}
-                        c="gray.4"
+                        c="gray.6"
                         style={{
                           display: "flex",
                           transition: "color 0.2s",
-                          ":hover": { color: "#fff" },
+                          ":hover": { color: "#111827" },
                         }}
                         aria-label={social.label}
                       >
@@ -95,7 +95,7 @@ const Footer = () => {
                 </Group>
               </Group>
 
-              <Text size="sm" c="gray.5" ta={{ base: "center", sm: "left" }}>
+              <Text size="sm" c="gray.6" ta={{ base: "center", sm: "left" }}>
                 © {new Date().getFullYear()} Stripe, Inc. All rights reserved.
               </Text>
             </Stack>

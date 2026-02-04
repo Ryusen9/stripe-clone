@@ -2,9 +2,9 @@ import { Box, SimpleGrid, Text, Title, Stack, Card } from "@mantine/core";
 import { motion } from "motion/react";
 import Image from "next/image";
 import img1 from "../../../../../../public/Photos/image1.jpg";
-import img2 from "../../../../../../public/Photos/image2.png";
-import img3 from "../../../../../../public/Photos/image3.png";
-import img4 from "../../../../../../public/Photos/image4.png";
+import img2 from "../../../../../../public/Photos/image2.jpg";
+import img3 from "../../../../../../public/Photos/image3.jpg";
+import img4 from "../../../../../../public/Photos/image4.jpg";
 import img5 from "../../../../../../public/Photos/image5.jpg";
 import img6 from "../../../../../../public/Photos/image6.jpg";
 

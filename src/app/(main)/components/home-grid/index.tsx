@@ -2,9 +2,9 @@
 import { DTitle } from "@/components";
 import { ActionIcon, Box, Modal } from "@mantine/core";
 import image1 from "../../../../../public/Photos/image1.jpg";
-import image2 from "../../../../../public/Photos/image2.png";
-import image3 from "../../../../../public/Photos/image3.png";
-import image4 from "../../../../../public/Photos/image4.png";
+import image2 from "../../../../../public/Photos/image2.jpg";
+import image3 from "../../../../../public/Photos/image3.jpg";
+import image4 from "../../../../../public/Photos/image4.jpg";
 import image5 from "../../../../../public/Photos/image5.jpg";
 import image6 from "../../../../../public/Photos/image6.jpg";
 import { Fullscreen, Scaling } from "lucide-react";
@@ -40,12 +40,12 @@ Flexible solutions for every business model."
           <Box className="grid! grid-cols-1! sm:grid-cols-2! lg:grid-cols-3! mt-16! gap-4!">
             {/* card 1 */}
             <Box
-              className="rounded-2xl lg:col-span-2 h-127 p-7 bg-center bg-no-repeat bg-cover"
+              className="rounded-2xl lg:col-span-2 h-127 p-7 bg-center bg-size-[140%] bg-no-repeat"
               style={{ backgroundImage: `url(${image6.src})` }}
             >
               {/* text and button */}
               <Box className="flex justify-between">
-                <p className="max-w-90 text-xl md:text-2xl text-white">
+                <p className="max-w-90 text-xl md:text-2xl text-black">
                   Accept and optimize payments globally—online and in person
                 </p>
                 <ActionIcon onClick={open} size="lg" className="bg-secondary!">
@@ -59,7 +59,7 @@ Flexible solutions for every business model."
               style={{ backgroundImage: `url(${image2.src})` }}
             >
               <Box className="flex justify-between">
-                <p className="max-w-90 text-xl md:text-2xl text-white">
+                <p className="max-w-90 text-xl md:text-2xl text-black">
                   Enable any billing model
                 </p>
                 <ActionIcon size="lg" className="bg-secondary!">
@@ -73,7 +73,7 @@ Flexible solutions for every business model."
               style={{ backgroundImage: `url(${image3.src})` }}
             >
               <Box className="flex justify-between">
-                <p className="max-w-90 text-xl md:text-2xl text-white">
+                <p className="max-w-90 text-xl md:text-2xl text-black">
                   Monetize through agentic commerce
                 </p>
                 <ActionIcon size="lg" className="bg-secondary!">
@@ -87,7 +87,7 @@ Flexible solutions for every business model."
               style={{ backgroundImage: `url(${image4.src})` }}
             >
               <Box className="flex justify-between">
-                <p className="max-w-90 text-xl md:text-2xl text-white">
+                <p className="max-w-90 text-xl md:text-2xl text-black">
                   Create a card issuing program
                 </p>
                 <ActionIcon size="lg" className="bg-secondary!">
@@ -101,7 +101,7 @@ Flexible solutions for every business model."
               style={{ backgroundImage: `url(${image1.src})` }}
             >
               <Box className="flex justify-between">
-                <p className="max-w-90 text-xl md:text-2xl text-white">
+                <p className="max-w-90 text-xl md:text-2xl text-black">
                   Access borderless money movement with stablecoins and crypto
                 </p>
                 <ActionIcon size="lg" className="bg-secondary!">
@@ -115,7 +115,7 @@ Flexible solutions for every business model."
               style={{ backgroundImage: `url(${image5.src})` }}
             >
               <Box className="flex justify-between">
-                <p className="max-w-95 text-xl md:text-2xl text-white">
+                <p className="max-w-95 text-xl md:text-2xl text-black">
                   Embed payments in your platform
                 </p>
                 <ActionIcon size="lg" className="bg-secondary!">

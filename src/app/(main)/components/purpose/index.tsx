@@ -31,7 +31,7 @@ export default function Purpose() {
           <DTitle
             title="Connect to existing systems."
             subtitle="Orchestrate payments across multiple processors, build custom workflows, and connect to third parties using APIs, partner apps, or prebuilt integrations."
-            className="md:text-2xl! text-xl! text-white! max-w-168!"
+            className="md:text-2xl! text-xl! text-white! max-w-2xl!"
             subtitleClassName="text-[#839BC8]! inline!"
           />
           <Box className="w-full">

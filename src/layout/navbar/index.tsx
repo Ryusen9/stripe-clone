@@ -22,7 +22,7 @@ export default function Navbar() {
   }, []);
   return (
     <nav
-      className={`w-full sticky top-0 left-0 z-1000 border-b border-gray-400 transition-colors duration-300 ${scrolled ? "bg-white!" : "bg-transparent"}`}
+      className={`w-full sticky top-0 left-0 z-1000 border-b hover:bg-white border-gray-400 transition-colors duration-300 ${scrolled ? "bg-white!" : "bg-transparent"}`}
     >
       <Box className="max-w-[1264]! mx-auto! py-3! px-4! flex! items-center! justify-between!">
         {/* logo */}
