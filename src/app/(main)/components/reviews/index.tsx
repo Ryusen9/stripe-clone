@@ -9,7 +9,7 @@ import Testimonials from "./components/testimonials";
 
 export default function ReviewSection() {
   return (
-    <Box className="max-w-317.5 mx-auto border-l border-r border-gray-400 py-15">
+    <Box className="max-w-317.5 mx-auto border-l border-r border-gray-400 pt-15">
       {/* top */}
       <Box className="flex flex-col lg:flex-row items-start justify-between w-full px-4">
         <Box className="flex flex-col gap-6">
@@ -29,7 +29,7 @@ export default function ReviewSection() {
           Stripe for platforms
         </RoundedBtn>
       </Box>
-      <Box className="flex flex-col px-4 py-20">
+      <Box className="flex flex-col px-4 pt-15">
         <Image
           src={imgSs2.src}
           alt="photo"

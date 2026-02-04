@@ -64,11 +64,7 @@ function LogoButton({
       }
       aria-pressed={active}
     >
-      <Group
-        gap={12}
-        wrap="nowrap"
-        className="opacity-90"
-      >
+      <Group gap={12} wrap="nowrap" className="opacity-90">
         {logo.logoNode ? (
           <Box>{logo.logoNode}</Box>
         ) : logo.logoSrc ? (
@@ -150,7 +146,7 @@ export default function TestimonialTabs(props: TestimonialTabsProps) {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
               transition={{ duration: 0.22 }}
-              className="text-center h-40 flex items-center justify-center"
+              className="text-center"
             >
               <Text
                 fz={{ base: 16, sm: 22 }}

@@ -6,8 +6,8 @@ import logo2 from "../../../../../public/10002.webp";
 
 export default function BookOfWeek() {
   return (
-    <Box className="max-w-317.5 mx-auto border-r border-l px-4 pb-10 border-gray-400 flex flex-col gap-8">
-      <Box className="relative bottom-18">
+    <Box className="max-w-317.5 pt-15 mx-auto border-r border-l px-4 pb-10 border-gray-400 flex flex-col gap-8">
+      <Box className="">
         <Box className="text-lg md:text-3xl font-grotesk font-medium pb-10">
           Book of the week <br />{" "}
           <span className="text-gray-400">

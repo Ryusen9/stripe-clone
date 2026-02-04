@@ -7,6 +7,7 @@ import {
   HeroSection,
   HomeGrid,
   Letter,
+  Purpose,
   ReviewSection,
 } from "./(main)/components";
 
@@ -20,6 +21,7 @@ const Home = () => {
       <AccordionSection />
       <CarousalFoundation />
       <ReviewSection />
+      <Purpose />
       <BookOfWeek />
       <GetReady />
     </>

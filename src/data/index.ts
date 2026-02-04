@@ -251,3 +251,9 @@ export const testimonialItems: TestimonialItem[] = [
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=192&h=192&q=80",
   },
 ];
+
+export const purposeData = [
+  {num: "500M+", desc: "API requests per day"},
+  {num: "10K+", desc: "API requests per second"},
+  {num: "150k+", desc: "Transactions per second"},
+]

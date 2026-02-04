@@ -7,6 +7,7 @@ import CarousalFoundation from "./carousal-foundation";
 import BookOfWeek from "./book-of-the-week";
 import GetReady from "./get-ready";
 import ReviewSection from "./reviews";
+import Purpose from "./purpose";
 
 export {
   HeroSection,
@@ -18,4 +19,5 @@ export {
   BookOfWeek,
   GetReady,
   ReviewSection,
+  Purpose,
 };
